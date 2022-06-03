@@ -2,9 +2,6 @@ package br.com.triersistemas.cebolinha;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.SplittableRandom;
-
-import br.PessoaJuridica;
 
 public class Fornecedor extends PessoaJuridica{
     private List<String> produto;
@@ -12,7 +9,7 @@ public class Fornecedor extends PessoaJuridica{
     public List<String> getProduto(){
         return produto;
     }
-    
+
     public Fornecedor(){
 
         produto = new ArrayList<>();
@@ -24,8 +21,6 @@ public class Fornecedor extends PessoaJuridica{
         produto.add("Sorine");
         produto.add("Colirio");
         produto.add("Bandeide");
-        produto.add("Pasta");
-        
-        
+        produto.add("Pasta");  
     }
 }

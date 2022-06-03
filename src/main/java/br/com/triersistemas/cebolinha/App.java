@@ -5,11 +5,16 @@ import java.util.SplittableRandom;
 public class App {
 
     public static void main(String[] args) {
-
-        Farmaceutico f = new Farmaceutico();
-        System.out.println("Farmaceutico: \t"+f.getNome() +"\t| Documento: \t"+ f.getDocumento() +"\t| Oferta do dia: \t"+ f.getofertaDia());
+    	
+        Farmaceutico farmaceutico = new Farmaceutico();
+        System.out.println("Farmaceutico: \t"+farmaceutico.getNome() +"\t| Documento: \t"+ farmaceutico.getCpf()+"\t| Oferta do dia: \t"+ farmaceutico.getofertaDia());
         
        Fornecedor fornecedor = new Fornecedor();
-       System.out.println("Fornecedor: \t"+fornecedor.getNome() + "\t| Documento: \t"+fornecedor.getDocumento()+"\t| Produtos: \t"+ fornecedor.getProduto());
+       System.out.println("Fornecedor: \t"+fornecedor.getNome() + "\t| Documento: \t"+fornecedor.getCnpj()+"\t| Produtos: \t"+ fornecedor.getProduto());
     }
+
+	private static void calculaCpf(String string) {
+		System.out.println(string);
+		
+	}
 }
